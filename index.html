@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diems Cibangu | Formations & Services Informatiques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Diems<span>Cibangu</span></div>
+            <ul>
+                <li><a href="index.html" class="active-link">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio & Services</a></li>
+            </ul>
+                        <button id="theme-toggle" style="padding: 6px 12px; font-size: 0.8rem; box-shadow: none;">🌓 Mode</button>
+        </nav>
+
+        </nav>
+    </header>
+
+    <main>
+                <section id="hero">
+            <div class="photo-profil">
+                <img src="moi.jpg" alt="Diems Cibangu">
+            </div>
+
+            <h1>Expert en Solutions Digitales & Formations</h1>
+            <p>Développeur Web & Logiciel, Designer Global et Formateur Pro. Je donne vie à vos projets informatiques et je propulse vos compétences.</p>
+            
+            <div class="services-rapides">
+                <span>💻 Code</span>
+                <span>🎨 Design</span>
+                <span>📚 Formation</span>
+            </div>
+            
+            <a href="portfolio.html"><button id="btn-portfolio">Découvrir mes Services</button></a>
+        </section>
+
+        
+        <section id="contact-section" style="margin-top: 50px; width: 100%; max-width: 400px; margin-left: auto; margin-right: auto; padding-bottom: 30px;">
+            <h2 id="titre-contact" style="text-align: center; color: #ffffff; margin-bottom: 20px;">Me Contacter</h2>
+            
+            <form id="form-contact">
+                <div class="champ-form">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" placeholder="Votre nom..." required>
+                </div>
+
+                <div class="champ-form">
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" placeholder="Votre email..." required>
+                </div>
+
+                <div class="champ-form">
+                    <label for="message">De quoi avez-vous besoins ?</label>
+                    <textarea id="message" rows="5" placeholder="En quoi puis-je vous aider ?" required></textarea>
+                </div>
+
+                <button type="submit" style="width: 100%; margin-top: 10px;">Envoyer le message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

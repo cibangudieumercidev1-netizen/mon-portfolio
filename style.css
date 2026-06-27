@@ -1,0 +1,258 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121214; /* Fond sombre */
+    color: #e1e1e6; /* Texte clair */
+    padding: 20px;
+}
+
+/* Style de la navigation */
+nav {
+    display: flex;
+    flex-direction: column; /* Aligné verticalement sur mobile pour l'instant */
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00adb5; /* Une jolie couleur turquoise */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #a8a8b3;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+    color: #00adb5;
+}
+
+/* Style de la section Hero (Présentation) */
+#hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+#hero h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+#hero p {
+    color: #a8a8b3;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+/* Style du bouton */
+button {
+    background-color: #00adb5;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 173, 181, 0.3);
+}
+/* Style de la grille de projets */
+.grid-projets {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.carte-projet {
+    background-color: #1e1e24;
+    border: 1px solid #2d2d34;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carte-projet h3 {
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+.carte-projet p {
+    font-size: 0.9rem;
+    color: #a8a8b3;
+    margin-bottom: 15px;
+}
+
+.carte-projet span {
+    font-size: 0.8rem;
+    background-color: rgba(0, 173, 181, 0.1);
+    color: #00adb5;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+/* Améliorations Diems Cibangu */
+.logo span {
+    color: #00adb5;
+    margin-left: 5px;
+}
+
+.services-rapides {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.services-rapides span {
+    background: #1e1e24;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #00adb5;
+    border: 1px solid #2d2d34;
+}
+
+.active-link {
+    color: #00adb5 !important;
+    font-weight: bold;
+}
+/* Style du Formulaire de Contact */
+#form-contact {
+    background-color: #1e1e24;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #2d2d34;
+}
+
+.champ-form {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.champ-form label {
+    font-size: 0.85rem;
+    color: #00adb5;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.champ-form input, 
+.champ-form textarea {
+    background-color: #121214;
+    border: 1px solid #2d2d34;
+    color: #e1e1e6;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.champ-form input:focus, 
+.champ-form textarea:focus {
+    border-color: #00adb5;
+}
+/* Style pour la photo de profil */
+.photo-profil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #00adb5;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 173, 181, 0.4);
+}
+
+.photo-profil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour que la photo ne soit pas déformée */
+}
+
+/* Correction de l'alignement des badges pour les petits écrans */
+.services-rapides {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permet de passer à la ligne proprement si l'écran est trop petit */
+    gap: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.services-rapides span {
+    background: #1e1e24;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #00adb5;
+    border: 1px solid #2d2d34;
+    white-space: nowrap; /* Empêche le texte du badge de se couper en deux */
+}
+/* ==========================================
+   GESTION DU MODE CLAIR (LIGHT MODE)
+============================================= */
+
+/* Quand la classe .light-theme est active sur le body */
+body.light-theme {
+    background-color: #f4f4f6; /* Fond clair */
+    color: #121214; /* Texte sombre */
+}
+
+body.light-theme #hero h1, 
+body.light-theme #portfolio-section h2 {
+    color: #121214;
+}
+
+body.light-theme nav ul li a {
+    color: #62626c;
+}
+
+body.light-theme .carte-projet,
+body.light-theme #form-contact,
+body.light-theme .btn-filtre,
+body.light-theme .services-rapides span {
+    background-color: #ffffff; /* Cartes et formulaires en blanc */
+    border-color: #d1d1d6;
+    color: #121214;
+}
+
+body.light-theme .champ-form input, 
+body.light-theme .champ-form textarea {
+    background-color: #f4f4f6;
+    border-color: #d1d1d6;
+    color: #121214;
+}
+
+body.light-theme #theme-toggle {
+    background-color: #121214;
+    color: #ffffff;
+}
+body.light-theme #hero h1, 
+body.light-theme #portfolio-section h2 {
+    color: #121214 !important; /* Force le titre à devenir sombre en mode clair */
+}

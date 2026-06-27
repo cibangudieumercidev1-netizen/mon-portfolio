@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Diems Cibangu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Diems<span>Cibangu</span></div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html" class="active-link">Portfolio & Services</a></li>
+            </ul>
+                        <button id="theme-toggle" style="padding: 6px 12px; font-size: 0.8rem; box-shadow: none;">🌓 Mode</button>
+        </nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio-section">
+            <h2 style="text-align: center; color: #ffffff; margin-bottom: 20px;">Mes Services & Réalisations</h2>
+            
+            <div class="filtres">
+                <button class="btn-filtre active" data-cible="tous">Tous</button>
+                <button class="btn-filtre" data-cible="dev">Développement</button>
+                <button class="btn-filtre" data-cible="design">Design</button>
+                <button class="btn-filtre" data-cible="formation">Formations</button>
+            </div>
+
+            <div class="grid-projets">
+                <div class="carte-projet dev">
+                    <h3>Développement Web & Logiciel</h3>
+                    <p>Création de sites internet modernes, applications web interactives et logiciels sur-mesure.</p>
+                    <span>HTML / CSS / JS / C# / Python</span>
+                </div>
+
+                <div class="carte-projet design">
+                    <h3>Designer Global</h3>
+                    <p>Conception d'identités visuelles, d'affiches publicitaires pro et de maquettes graphiques percutantes.</p>
+                    <span>Création Visuelle</span>
+                </div>
+
+                <div class="carte-projet formation">
+                    <h3>Formations Professionnelles</h3>
+                    <p>Cours et encadrement en programmation (C#, Python) et maîtrise de la suite Microsoft Office (Word, Excel, PowerPoint).</p>
+                    <span>Coaching / IT</span>
+                </div>
+
+                <div class="carte-projet formation">
+                    <h3>Installation de Systèmes</h3>
+                    <p>Installation, configuration et optimisation de systèmes d'exploitation (Windows et Linux).</p>
+                    <span>Système d'exploitation</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
